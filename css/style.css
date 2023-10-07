@@ -1,0 +1,85 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: cyan;
+}
+.navOption {
+  padding: 20px;
+}
+#navbar a {
+  transition: color 0.3s ease;
+}
+#navbar a:hover {
+  color: red;
+}
+#logoContainer {
+  position: fixed;
+  align-content: left;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  float: left;
+}
+#header_text {
+  margin-top: 150px;
+  margin-left: 50px;
+}
+.page_header {
+  background-color: red;
+}
+.introduction {
+  clear: top;
+}
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero img {
+  display: block;
+  margin-top: auto;
+  margin-right: auto;
+  width: 250px;
+}
+.hero h1 {
+  font-size: 2rem;
+  margin-top: 2 rem;
+  margin-bottom: 0.5rem;
+  margin-left: 250px;
+}
+.hero blockquote {
+  font-size: 1.5rem;
+  width: 40rem;
+  margin-bottom: 3rem;
+  margin-left: 250px;
+}
+.hero button {
+  padding: 1rem 3rem;
+  background-color: lightblue;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-left: 250px;
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: start;
+  }
+  .pages {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: start;
+  }
+  nav a {
+    font-size: 1.2rem;
+    padding: 0.25rem;
+  }
+  .hero img {
+    width: 200px;
+  }
+}
