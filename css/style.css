@@ -1,9 +1,11 @@
+body {
+  background-color: antiquewhite;
+}
 #navbar {
-  position: fixed;
-  top: 0;
-  right: 0;
+  position: static;
   padding: 10px;
-  background-color: cyan;
+  margin-top: auto;
+  background-color: dodgerblue;
 }
 .navOption {
   padding: 20px;
@@ -29,19 +31,33 @@
 .page_header {
   background-color: red;
 }
-.introduction {
-  clear: top;
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+.introduction,
+#degree_progess,
+#extras {
+  text-align: left;
 }
 .hero {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
 }
+.hero-content {
+  flex: 1;
+  margin-right: 20px;
+  text-align: left;
+}
 .hero img {
-  display: block;
-  margin-top: auto;
-  margin-right: auto;
-  width: 250px;
+  position: absolute;
+  margin-top: 525px;
+  margin-left: auto;
+  width: 225px;
 }
 .hero h1 {
   font-size: 2rem;
@@ -60,16 +76,13 @@
   background-color: lightblue;
   font-size: 1.2rem;
   border-radius: 5px;
-  margin-left: 250px;
+  margin-left: 300px;
+}
+#extras a:hover {
+  color: red;
 }
 @media only screen and (max-width: 600px) {
   nav {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    align-items: start;
-  }
-  .pages {
     display: flex;
     flex-direction: column;
     margin: 0;
