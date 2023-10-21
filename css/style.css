@@ -1,98 +1,129 @@
-body {
-  background-color: antiquewhite;
+#contact-us {
+  background-image: url(../media/img/photo-1561009226-7a820d647a40.jpg);
+  height: 100vh;
+  width: 100vw;
 }
-#navbar {
-  position: static;
-  padding: 10px;
-  margin-top: auto;
-  background-color: dodgerblue;
+#contact-us h1 {
+  color: yellow;
 }
-.navOption {
-  padding: 20px;
+#contact-us h2 {
+  color: white;
 }
-#navbar a {
-  transition: color 0.3s ease;
+.input-container {
+  margin-bottom: 10px;
 }
-#navbar a:hover {
-  color: red;
+.submit-container {
+  margin-top: 10px;
 }
-#logoContainer {
-  position: fixed;
-  align-content: left;
-  top: 0;
-  left: 0;
-  padding: 20px;
-  float: left;
+.wider-input {
+  width: 300px;
 }
-#header_text {
-  margin-top: 150px;
-  margin-left: 50px;
+.wider-input-height {
+  width: 300px;
+  height: 300px;
 }
-.page_header {
-  background-color: red;
-}
-.content {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: left;
-}
-.introduction,
-#degree_progess,
-#extras {
-  text-align: left;
-}
-.hero {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-}
-.hero-content {
-  flex: 1;
-  margin-right: 20px;
-  text-align: left;
-}
-.hero img {
+.arrow {
   position: absolute;
-  margin-top: 525px;
-  margin-left: auto;
-  width: 225px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px black;
 }
-.hero h1 {
-  font-size: 2rem;
-  margin-top: 2 rem;
-  margin-bottom: 0.5rem;
-  margin-left: 250px;
+.container {
+  display: flex;
+  justify-content: center;
 }
-.hero blockquote {
-  font-size: 1.5rem;
-  width: 40rem;
-  margin-bottom: 3rem;
-  margin-left: 250px;
+.left-side {
+  padding: 55px;
+  text-align: center;
+  flex: 1;
 }
-.hero button {
-  padding: 1rem 3rem;
-  background-color: lightblue;
-  font-size: 1.2rem;
+#text-boxes {
+  text-align: center;
+  flex: 1;
+  padding: 10px;
+}
+#start_page {
+  background-image: url(../media/img/thumb-1920-696754.jpg);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+#start_page .image {
+  display: flex;
+  justify-content: center;
+}
+#start_page .start_page_text {
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#florida-list {
+  background-image: url(../media/img/florida-beach-with-fine-white-sand-5u96eu26jhp3xp3z.jpg);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.florida-main-text {
+  width: 40%;
+  color: yellow;
+}
+
+.florida-sub-text {
+  width: 50%;
+  color: yellow;
+}
+.florida-sub-text {
+  margin-left: 10px;
+}
+#experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.experiences-text {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.experiences-pictures {
+  display: flex;
+  justify-content: space-around;
+}
+.experiences-pictures img {
+  max-width: 25%;
+  height: auto;
+  margin: 5px;
+  border: 2px solid #ddd;
   border-radius: 5px;
-  margin-left: 300px;
 }
-#extras a:hover {
-  color: red;
+#statistics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
-@media only screen and (max-width: 600px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    align-items: start;
-  }
-  nav a {
-    font-size: 1.2rem;
-    padding: 0.25rem;
-  }
-  .hero img {
-    width: 200px;
-  }
+.circle {
+  width: 200px;
+  height: 100px;
+  background-color: #3498db;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 100px;
+  padding: 50px;
+  margin: 10px;
 }
